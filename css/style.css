@@ -84,7 +84,7 @@ body {
 
 }
 input {
-    opacity: ;
+    opacity: 0;
     cursor: pointer
 }
 label {

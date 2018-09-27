@@ -55,11 +55,12 @@ function deletar_esta_merda (event2){
 
 function checkAll(o) {
     var boxes = document.getElementsByTagName("input");
-    for (var x = 0; x < boxes.length; x++) {
-      var obj = boxes[x];
-      if (obj.type == "checkbox") {
-        if (obj.name != "check")
-          obj.checked = o.checked;
+    for (let i = 0; i < boxes.length; i++) {
+      let boxChecked = boxes[i];
+      if (boxChecked.type == "checkbox") {
+        if (boxChecked.name != "check")
+        boxChecked.checked = o.checked;
+        
       }
     }
   }
@@ -73,7 +74,7 @@ function checkAll(o) {
 
 
     // allCheckboxes[allCheckboxes.selectedIndex].remove()
-  })
+//   })
 
 //   const deleteAllButton = document.querySelectorAll(".lista-tarefas__delete-button");
 
@@ -83,12 +84,12 @@ function checkAll(o) {
 //       console.log("Tarefa apagada");
 //   })
 
-function deletarTodas (event2){
-    var itens = document.getElementsByTagName("input");
-    for (var i = 0; x < itens.length; i++) {
-      var itensChecados = itens[x];
-      if (itensChecados.type == "checkbox") {
-          itensChecados.remove();
-}
-    }
-}
+// function deletarTodas (event2){
+//     var itens = document.getElementsByTagName("input");
+//     for (var i = 0; x < itens.length; i++) {
+//       var itensChecados = itens[x];
+//       if (itensChecados.type == "checkbox") {
+//           itensChecados.remove();
+// }
+//     }
+// }
